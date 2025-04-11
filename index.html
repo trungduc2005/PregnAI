@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PregnAI Dashboard</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="img/logo..png" alt="PregnAI Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li class="highlight">CHỨC NĂNG CHÍNH</li>
+          <li>LIÊN HỆ BÁC SĨ</li>
+        </ul>
+      </nav>
+      <div class="signout">
+        <input type="checkbox" id="signout" /> <label for="signout">SIGN OUT</label>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="camera-section">
+        <h2>Cam<strong>Pregn</strong></h2>
+        <div class="face-box">
+          <img src="face.jpg" alt="Detected Face" />
+        </div>
+        <p class="status">Nhận diện khuôn mặt thành công!</p>
+      </section>
+
+      <section class="chat-section">
+        <h2>PregnAI</h2>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Bạn đang cảm thấy như thế nào?"
+            onkeydown="if(event.key==='Enter') sendMessage()"
+          />
+          <button onclick="sendMessage()">Gửi</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
