@@ -160,4 +160,17 @@
   .chat-input button:hover {
     background: #594ed1;
   }
+
+  .main-header {
+    width: 100%;
+    padding: 20px 40px;
+    background: linear-gradient(to right, #6759ff, #ff7bac);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
   
